@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<style>
+#button1{
+    position: fixed;
+    top:0px;
+    left:0px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    color: blueviolet;
+    border: 1px solid purple;
+
+}
+#button2 {
+    position: fixed;
+    top:0px;
+    left:100px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    color: rgb(23, 184, 149);
+    border: 1px solid green;
+
+}
+#button3 {
+    position: fixed;
+    top:0px;
+    left:200px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    color: rgb(33, 138, 224);
+    border: 1px solid rgb(60, 21, 235);
+}
+
+#button4 {
+    position: fixed;
+    top:0px;
+    left:300px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    color: rgb(33, 224, 128);
+    border: 1px solid rgb(21, 235, 67);
+
+}
+#button5 {
+    position: fixed;
+    top:0px;
+    left:400px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    color: rgb(122, 33, 224);
+    border: 1px solid rgb(24, 21, 235);
+
+}
+img{
+    width:150px;
+}
+
+</style>
+<script type="text/javascript">
+$(function() {
+    var num = 0;
+$("#button1").click(function(){
+        num+=1;
+     $("#one").append("<img src='img/danny.png'>");
+    });
+$("#button2").click(function(){
+    num+=1;
+    $("#one").append("<img src='img/scott.png'>");
+    });
+$("#button3").click(function(){
+    num+=1;
+    $("#one").append("<img src='img/adita.png'>");
+});
+$("#button4").click(function(){
+    num+=1;
+    $("#one").append("<img src='img/shlomo.png'>");
+});
+$("#button5").click(function(){
+    num+=1;
+    $("#one").append("<img src='img/dashie.png'>");
+});
+    if(num=5){
+        $("#one:first-child").animate({ left: "+500" }, "slow");
+    }
+})
+
+</script>
+
+</head>
+<body>
+<div id="one"></div>
+<button id="button1">click</button>
+<button id="button2">click</button>
+<button id="button3">click</button>
+<button id="button4">click</button>
+<button id="button5">click</button>
+
+</body>
+</html>
